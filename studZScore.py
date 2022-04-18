@@ -30,11 +30,6 @@ mean = statistics.mean(mean_list)
 print("mean of sampling distribution:- ",mean)
 print("Standard deviation of sampling distribution:- ", std_deviation)
 
-## findig the standard deviation starting and ending values
-first_std_deviation_start, first_std_deviation_end = mean-std_deviation, mean+std_deviation
-second_std_deviation_start, second_std_deviation_end = mean-(2*std_deviation), mean+(2*std_deviation)
-third_std_deviation_start, third_std_deviation_end = mean-(3*std_deviation), mean+(3*std_deviation)
-
 # # finding the mean of THE STUDENTS WHO GAVE EXTRA TIME TO MATH LAB and plotting on graph
 df = pd.read_csv("School_1_Sample.csv")
 data = df["Math_score"].tolist()
